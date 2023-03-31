@@ -15,4 +15,16 @@ public class TestCoche {
         Assertions.assertEquals(30,nuevoCoche.velocidad);
 
     }
+    @Test
+    public void test_al_decelerar_un_coche_su_velocidad_es_disminuye(){
+        Coche nuevoCoche = new Coche();
+        //añadimos velocidad inicial ya que si un coche está en velocidad
+        //cero, no debería ni podría bajar a una velocidad negativa.
+        nuevoCoche.velocidad = 50;
+
+        //depués de asiganarle una velocidad, la disminuye
+        nuevoCoche.decelerar(20);
+        Assertions.assertEquals(30,nuevoCoche.velocidad);
+
+    }
 }
