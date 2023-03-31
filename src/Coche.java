@@ -1,11 +1,11 @@
 public class Coche {
     public int velocidad;
 
-    public void acelerar(int aceleracion) {
+    public void acelerar_Victoria_Ramirez_Garcia(int aceleracion) {
         velocidad += aceleracion;
     }
 
-    public void decelerar(int deceleracion) {
+    public void decelerar_Victoria_Ramirez_Garcia(int deceleracion) {
         velocidad -= deceleracion;
         //controlamos la velocidad si llega a un valor negativo
         if(velocidad < 0){
